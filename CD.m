@@ -10,7 +10,6 @@ function dx = CD(t, x)
     T = 1/fPWM;
     
     % Señal PWM (onda cuadrada)
-    %d = (mod(t, T) < D*T);
     d = D * (mod(t, T) < T);
 
     %-----------------------------------------% 
