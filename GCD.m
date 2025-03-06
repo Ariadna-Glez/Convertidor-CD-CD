@@ -4,7 +4,9 @@ tspan = [0 0.01];  % tiempo de simulacion 5 ms
 % Resolver el sistema con ODE45
 [t, x] = ode45(@CD, tspan, x0);
 
-% Graficar los resultados
+figure(1)
+plot(t,x);
+
 figure('Position', [50, 50, 600, 500]);
 
 % Corriente iL
